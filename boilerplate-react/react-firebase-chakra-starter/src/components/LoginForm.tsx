@@ -11,6 +11,7 @@ import {
 import { useState } from "react";
 import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import { login, signup, logout, getCurrentUser } from "../auth/Auth";
 
 // Define types for form fields and data
 type LoginFormFields = {
@@ -61,7 +62,6 @@ const loginFormData: LoginFormData = {
 // A user type should be imported from the firebase auth module
 
 function googleSignin() {
-  // Placeholder function for Google Sign-In
   console.log("Google Sign-In clicked");
 }
 
